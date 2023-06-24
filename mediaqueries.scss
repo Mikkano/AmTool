@@ -1,0 +1,63 @@
+@import 'main.scss';
+
+
+@media(max-width: 1600px){
+
+    .main-sections{
+        font-size: 13px;
+    }
+    #libutton{
+        font-size: 12px;
+        height: 23px;
+    }
+    }
+
+    @media(max-height: 600px){
+        #client-listid{
+            height: 43vh;
+        }
+ }
+
+@media(max-width: 950px){
+
+  .btn-text{
+    display: none;
+
+
+  }
+  .clientInfo{
+    font-size: 13px;
+  }
+  #libutton {
+    height: 23px;
+    font-size: 12px;
+}
+}
+
+@media (max-width: 800px){
+  #libuttons{
+    font-size: 10px;
+  }
+};
+
+
+
+@media (min-width:1400px){
+  #wrapper{
+    width: 350px;
+  }
+  #search{
+    width: 350px;
+  }
+
+}
+@media (min-width: 2000px){
+  #wrapper{
+    margin-left: 8vw;
+  }
+}
+@media (min-width: 2250px){
+  #wrapper{
+    margin-left: 10vw;
+  }
+}

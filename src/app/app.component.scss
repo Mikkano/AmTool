@@ -1,0 +1,189 @@
+@import 'main.scss';
+@import 'mediaqueries.scss';
+
+
+
+.panel{
+    display: flex;
+    margin: 15vh auto;
+    width: 85vw;
+    height: 70vh;
+    background-color: rgb(252, 252, 252);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+// ------- TOPBAR   END/ MAIN START
+.main{
+    overflow: hidden;
+    height: 70vh;
+    width: 85vw;
+    background-color: rgb(255, 255, 255);
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+    .nav{
+        width: 85vw;
+        display: flex;
+        height: 55px;
+        align-items: center;
+        border-bottom: solid 1px lightgray;
+
+        .separator{
+            color:$secondary-color;
+            font-family: $Jura;
+            font-size: 1rem;
+            line-height: 0.7rem;
+            margin-left: 15px;
+            font-weight: bold;
+
+        }
+
+
+
+   div{
+    color: $secondary-color;
+    display: flex;
+    width: 200px;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-left: 30px;
+        input{
+            width: 200px;
+            display: block;
+            font-weight: bold;
+            height: 32px;
+            border: none;
+            border-bottom: 1px solid $primary-color;
+            font-family: $Jura;
+            justify-self: flex-end;
+            align-self: center;
+            margin-right: 20px;
+            margin-left: 15px;
+        }
+    #search:focus{
+        outline: none;
+        color: rgb(63, 63, 63);
+        border: 1.3px solid $secondary-color;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        border-radius: 0px;
+    }
+}
+
+    }
+
+    .nav-button{
+        font-size: 0.75rem;
+        font-weight: bold;
+        font-family: $Jura;
+        color: $secondary-color;
+        background-color: white;
+        border: none;
+        height: 55%;
+        padding: 0 15px;
+        border-radius: 3px;
+        margin-left: 15px;
+        width: 250px;
+        transition: 0.4s ease-in-out;
+
+    }
+
+    .nav-button:hover{
+        transition: 0.3s ease-in;
+        height: 60%;
+        background-color: $secondary-color;
+        color: white;
+        cursor: pointer;
+    }
+
+    .client-list{
+        overflow: auto;
+        align-self: flex-start;
+        margin-top: 5vh;
+        margin-right: 0;
+        height: 49vh;
+        li{
+            margin: 0;
+            line-height: 30px;
+            height: 50px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            p{
+                font-family:'Jura', sans-serif;
+                font-weight: bold;
+                display: block;
+                border-right: solid 1px;
+                width: 400px;
+                height: 30px;
+                border-color: $primary-color;
+                text-align: center;
+            }
+            button{
+                color: white;
+                background-color: $primary-color;
+                margin: 5px;
+                font-family:'Jura', sans-serif;
+                font-weight: 700;
+                font-size: 13px;
+                height: 30px;
+                width: 100px;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+            div{
+                margin-left: 1vw;
+                margin-right: 1vw;
+                flex-basis: 40%;
+                display: flex;
+                width: 30vw;
+                align-items: center;
+                justify-content: center;
+
+                button{
+                    margin-left: 0.5vw;
+                }
+                button:hover{
+                    transition: 0.2s linear;
+                    transform: scale(1.1);
+                    background-color: $secondary-color;
+                    color: white;
+                }
+
+
+            }
+
+        }
+
+}
+#clients-nav{
+    background-color: aliceblue;
+    p{
+        color: $secondary-color;
+        font-family: monospace;
+        display: block;
+        border-right: none;
+        width: 400px;
+        height: 30px;
+        text-align: center;
+        font-size: 19px;
+        kerning: 5px;
+    }
+
+}
+
+.active{
+    transition: 0.3s ease-in;
+        height: 60%;
+        background-color: $secondary-color;
+        color: white;
+}
+.inactive{
+  display: none;
+}
+
